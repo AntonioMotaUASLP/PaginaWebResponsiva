@@ -1,0 +1,260 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Centrar la página */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: aqua;
+    }
+
+    /* Estilo para el menú */
+    .menu {
+        display: flex;
+        background-color: rgba(27, 58, 144, 0.68);
+        height: 15vh;
+        width: 70vh;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+        .logoVisual {  
+            position:relative;
+            left:50px;
+
+            width: 100px;
+            height: 20px;
+            border: 4px solid black; 
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu_opciones {
+            position: relative;
+            left: 350px;
+            top: -40px;
+ 
+            height: max-content;
+            width: max-content; 
+
+
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+
+            border: 2px solid black;
+        }
+
+        .menu_opciones span{
+            border: 1px solid black;
+            text-align: center;
+            font-size: small;
+            height: 30px;
+            margin: 1px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 0px;
+        }
+        
+    .img_whats {
+        position: absolute;
+
+        margin-left: 1240px;
+        margin-top: 15px;
+    }
+
+    .ubicacion{
+        background-color: white;
+        height: 60px;
+        width: 300px;
+        position: relative;
+        left: 900px;
+        top: -5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ubicacion span{
+        height: 30px;
+        padding: 5px;
+        margin: 5 px;
+        border: 2px solid orange;
+        color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Estilo para el encabezado */
+    .header {
+        background-color: darkgray; 
+        background-image: url(imagenes/wetbaes.JPG);
+        background-size: cover;
+        height: 300px;
+        text-align: center;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .header div {
+            border: 4px solid white;
+            padding: 10px;
+            width: 300px;
+        }
+
+
+    /* Estilo para el titulo de la seccion */
+    .tituloTexto {
+        height: 20vh;
+
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+        .tituloTexto span {
+            border: 3px solid black;
+            padding-left: 10vh;
+            padding-right: 10vh;
+            margin: 5px;
+            height: min-content;
+        }
+    
+    /* Estilo para las subsecciones */
+    .subsection {
+
+    height: max-content;
+    width: 1300px;
+
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .imagen_cuadrada {
+        width: 40vh;
+        height: 40vh;
+
+        margin: 10px;
+        padding: 2%;
+        border-radius: 2%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        background-image: url(imagenes/5.jpg);
+        background-size: contain;
+    }
+
+        .imagen_cuadrada span {
+            border: 1px solid white;
+            
+            padding: 0px;
+            margin: 5px;
+            margin-bottom: 10px;
+            font-size: 1vh;
+        }
+
+
+    /* Estilo para el pie de página */
+    .footer {
+        background-color: black;
+        height: max-content;
+        color: white;
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        padding: 10px;
+        
+
+    }
+
+    .footer span {
+        border: 2px solid white;
+        width: max-content;
+        padding: 2px;
+    }
+
+    .infoDelFooter {
+
+        width: max-content;
+        margin: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-items: flex-start;
+    }
+
+    .izquierda {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .izquierda span{
+        margin: 5px;
+    }
+
+    .centro {
+        margin: 5px;
+        padding: 2%;
+    }
+
+    .centro div {
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .centro span {
+        margin: 5px;
+    }
+
+
+.derecha {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 80vh;
+}
+    .derecha span {
+        margin: 2px;
+    }
+
+.linea {
+    margin: 1px solid gray;
+    width: 100vh;
+    height: 2px;
+}
+
+.copyright {
+    border: 2px solid white;
+    width: max-content;
+    padding: 5px;
+}
