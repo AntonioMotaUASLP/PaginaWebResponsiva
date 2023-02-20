@@ -1,252 +1,491 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* Utilizar tres rangos de tamaño 
+1 Móvil de 0px a 680px 
+2 Tableta de 681px a 1024px
+3 Monitor de 1025px en adelante */
+
+* {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
 /* Centrar la página */
-.container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: aqua;
-    }
+.container { width: 100%; margin: 0 auto;}
 
-.parteSuperior {
-    background-color: rgb(30, 49, 96);
-    height: 25vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-    .logotipos {
-        width: 40%;
-        height: max-content;
-
+/* -------------------------- Estilo para moviles -------------------------- */
+/* --------------------------                      -------------------------- */
+/* --------------------------                      -------------------------- */
+@media (max-width: 680px){
+    .parteSuperior {
+        background-color: #17325b;
+        border: 2px solid rgb(189, 5, 5);
+        height: 80vh;
+    
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    
     }
-        .logoVisual {  
-            width: 50%;
-            height: 50%;
-
-            padding: 0px;
-            margin-left: 5vh;
-            margin-right: 2vh;
-
+    
+        .logotipos {
+            height: max-content;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            .logoVisual {  
+                height: 20vh;
+    
+                padding: 0px;
+                margin-left: 5vh;
+                margin-right: 2vh;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .logoVisual img {
+                width: 15vw;
+            }
+    
+    
+        .FotoEdificio{
+            background-image: url(img/banner.jpg);
+            background-size: cover;
+            height: 25vh;
+            width: 100vw;
+    
+    
+    
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .logoVisual img {
-            height: 10vh;
+    
+        /* Estilo para el encabezado */
+        .header {
+            background-color: rgb(218,218,218); 
+            height: 5vh;
+            color: rgb(67, 67, 67);
+    
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
         }
-
-
-    .FotoEdificio{
-        background-image: url(img/banner.jpg);
-        background-size: cover;
-        height: 25vh;
-        width: 60%;
-
-
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ubicacion span{
-        height: 30px;
-        padding: 5px;
-        margin: 5 px;
-        border: 2px solid orange;
-        color: orange;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Estilo para el encabezado */
-    .header {
-        background-color: darkgray; 
-        height: 10vh;
-        color: rgb(67, 67, 67);
-
+    
+    
+                /* Estilo para el menú */
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: space-evenly;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+            .menu_opciones {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+    
+            .menu_opciones div{
+    
+                text-align: center;
+                font-size: 16px;
+                height: 100%;
+                width: 100%;
+                margin: 1px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 8px;
+            }
+    
+    .cuerpo {
         margin-top: 1vh;
-
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-
-            /* Estilo para el menú */
-    .menu {
+        flex-direction: column;
+    } 
+        
+    .seccionIzquierda {
+        height: 5vh; 
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: space-around;
-        padding: 10px;
+        justify-content: space-between;
+        font-size: 1vw;
     }
-
-        .menu_opciones {
+        .seccionIzquierda div {
+            background-color: rgb(31,114,183);
+            color: white;
+            margin: 2px;
+            padding: 4px;
             width: 100%;
+            height: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    .seccionDerecha {
+        height: 50vh;
+        background-color: bisque;
+        margin-top: 2vh;
+    }
+    
+    .seccionImagenes {
+        color: white;
+        height: max-content;
+        width: 95vw;
+        margin-top: 2vh;
+    
+        display: flex;
+        flex-direction: column;
+    }   .seccionImagenes span p{font-size: 2vw; width: 100vw; padding-left: 2vw;}
+
+        .contenedorIconos {
+            display: flex;
+            flex-direction: row;
+            margin: 2vh;
+            justify-content: space-around;
+        }
+    
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: rgb(218,218,218);
+            height: 25vh;
+            color: black;
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: flex-start;
+        }   .footer span { padding-left: 5vw; height: 3vh;}
+}
+
+/* -------------------------- Estilo para Tablet -------------------------- */
+/* --------------------------                      -------------------------- */
+/* --------------------------                      -------------------------- */
+@media (max-width: 1024px){
+    .parteSuperior {
+        background-color: #17325b;
+        height: 25vh;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+        .logotipos {
+            height: max-content;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            .logoVisual {  
+                height: 20vh;
+    
+                padding: 0px;
+                margin-left: 5vh;
+                margin-right: 2vh;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .logoVisual img {
+                width: 15vw;
+            }
+    
+    
+        .FotoEdificio{
+            background-image: url(img/banner.jpg);
+            background-size: cover;
+            height: 25vh;
+            width: 60vw;
+    
+    
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        /* Estilo para el encabezado */
+        .header {
+            background-color: rgb(218,218,218); 
+            height: 5vh;
+            color: rgb(67, 67, 67);
+    
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-around;
         }
-
-        .menu_opciones span{
-
-            text-align: center;
-            font-size: 2vw;
-            height: 100%;
-            margin: 1px;
-            margin-left: 5px;
-            margin-right: 5px;
-            padding: 8px;
-        }
-        
-    /* Estilo para el titulo de la seccion */
-    .tituloTexto {
-        height: 20vh;
-
-        display: flex;
-        justify-items: center;
-        align-items: center;
-
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-        .tituloTexto span {
-            border: 3px solid black;
-            padding-left: 10vh;
-            padding-right: 10vh;
-            margin: 5px;
-            height: min-content;
+    
+    
+                /* Estilo para el menú */
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: space-evenly;
+            justify-content: center;
+            padding: 10px;
         }
     
-    /* Estilo para las subsecciones */
-    .subsection {
-
-    height: max-content;
-    width: 1300px;
-
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    margin-left: 10vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    }
-
-    .imagen_cuadrada {
-        width: 40vh;
-        height: 40vh;
-
-        margin: 10px;
-        padding: 2%;
-        border-radius: 2%;
-
+            .menu_opciones {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+    
+            .menu_opciones div{
+    
+                text-align: center;
+                font-size: 16px;
+                height: 100%;
+                width: 100%;
+                margin: 1px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 8px;
+            }
+    
+    .cuerpo {
+        margin-top: 1vh;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        background-image: url(imagenes/5.jpg);
-        background-size: contain;
-    }
-
-        .imagen_cuadrada span {
-            border: 1px solid white;
-            
-            padding: 0px;
-            margin: 5px;
-            margin-bottom: 10px;
-            font-size: 1vh;
-        }
-
-
-    /* Estilo para el pie de página */
-    .footer {
-        background-color: black;
-        height: max-content;
-        color: white;
-        margin-top: 20px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        align-items: center;
-        padding: 10px;
+    } 
         
-
-    }
-
-    .footer span {
-        border: 2px solid white;
-        width: max-content;
-        padding: 2px;
-    }
-
-    .infoDelFooter {
-
-        width: max-content;
-        margin: 10px;
-
+    .seccionIzquierda {
+        height: 5vh; 
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-items: flex-start;
+        align-items: space-around;
+        justify-content: space-between;
+        font-size: 1vw;
     }
-
-    .izquierda {
+        .seccionIzquierda div {
+            background-color: rgb(31,114,183);
+            color: white;
+            margin: 2px;
+            padding: 4px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    .seccionDerecha {
+        height: 50vh;
+        background-color: bisque;
+        margin-top: 2vh;
+    }
+    
+    .seccionImagenes {
+        color: white;
+        height: max-content;
+        width: 95vw;
+        margin-top: 2vh;
+    
         display: flex;
         flex-direction: column;
-        padding-left: 20px;
-    }
-    .izquierda span{
-        margin: 5px;
-    }
+    }   .seccionImagenes span p{font-size: 2vw; width: 100vw; padding-left: 2vw;}
 
-    .centro {
-        margin: 5px;
-        padding: 2%;
-    }
+        .contenedorIconos {
+            display: flex;
+            flex-direction: row;
+            margin: 2vh;
+            justify-content: space-around;
+        }
+    
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: rgb(218,218,218);
+            height: 25vh;
+            color: black;
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: flex-start;
+        }   .footer span { padding-left: 5vw; height: 3vh;}
+}
 
-    .centro div {
-        border: 2px solid white;
+/* -------------------------- Estilo para Monitor -------------------------- */
+/* --------------------------                      -------------------------- */
+/* --------------------------                      -------------------------- */
+
+@media (min-width: 1025px){
+    .parteSuperior {
+        background-color: #17325b;
+        height: 25vh;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+        .logotipos {
+            height: max-content;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            .logoVisual {  
+                width: 20vw;
+    
+                padding: 0px;
+                margin-left: 5vh;
+                margin-right: 2vh;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .logoVisual img {
+                width: 20vw;
+            }
+    
+    
+        .FotoEdificio{
+            background-image: url(img/banner.jpg);
+            background-size:cover;
+            height: 25vh;
+            width: 60vw;
+    
+    
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        /* Estilo para el encabezado */
+        .header {
+            background-color: rgb(218,218,218); 
+            height: 5vh;
+            color: rgb(67, 67, 67);
+    
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+    
+                /* Estilo para el menú */
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: space-around;
+            padding: 10px;
+        }
+    
+            .menu_opciones {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+    
+            .menu_opciones span{
+    
+                text-align: center;
+                font-size: 2vw;
+                height: 100%;
+                width: 100%;
+                margin: 1px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 8px;
+            }
+    
+    .cuerpo {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: row;
+    } 
+        
+    .seccionIzquierda {
+        width: 30vw;    
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        align-items: stretch;
+        justify-content: space-around;
     }
-    .centro span {
+        .seccionIzquierda div {
+            background-color: rgb(31,114,183);
+            color: white;
+            margin: 2px;
+            padding: 4px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    .seccionDerecha {
+        width: 100%;
+        height: 50vh;
+        background-color: bisque;
+        margin-left: 2vw;
+    }
+    
+    .seccionImagenes {
+        color: white;
+        width: 30vw;
+        height: 45vh;
+        margin-left: 1vw;
+    
+        display: flex;
+        flex-direction: column;
+
+    }   .seccionImagenes span p{font-size: small; width: 92%;}
+
+    .contenedorIconos{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }   .contenedorIconos div {
         margin: 5px;
     }
-
-
-.derecha {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    margin-left: 80vh;
-}
-    .derecha span {
-        margin: 2px;
-    }
-
-.linea {
-    margin: 1px solid gray;
-    width: 100vh;
-    height: 2px;
+    
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: rgb(218,218,218);
+            height: 25vh;
+            color: black;
+            margin-top: 1vh;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: flex-start;
+        }   .footer span { padding-left: 5vw; height: 3vh;}
 }
 
-.copyright {
-    border: 2px solid white;
-    width: max-content;
-    padding: 5px;
-}
